@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	/**/
+}
+.sidenav,ul li,.sidenavdown p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	overflow-y: auto;
+}
+nav{
+	white-space: nowrap;
+	overflow-y:auto;
+	text-overflow: clip;
+}
+a{
+	color:#000000;
+	text-decoration: none;
+	cursor:pointer;
+}
+a .normalcursor{
+	cursor:default;
+}
+.body{
+	background-image:url(backgrounds/body.jpg);
+	background-size: auto 1200px;
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+}
+nav{
+	width:100%;
+	margin-left:auto;
+	margin-right: auto;
+	background-color:#FFFFFF;
+	margin-top:0px;
+	height:50px;
+	opacity:1.0;
+}
+nav ul li{
+	float: left;
+	margin-left:10px;
+	font-size:1.2em;
+}
+.subs{
+	padding:10px;
+	font-weight: lighter;
+	margin-left:20px;
+}
+nav ul{
+	list-style-type: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color:#000000;
+}
+nav ul li a:hover{
+	color:#9E52B2;
+	opacity: 0.7;
+	cursor:pointer;
+}
+.container{
+	width: 67%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+	height: 2000px;
+	background-color: #FFFFCC;
+	overflow-y: auto;
+}
+.dividelinelong{
+	height:5px;
+	background-color:#FF7200;
+}
+.mainlogo{
+	padding:6px;
+	font-family:comic sans ms;
+	font-size: 20px;
+	letter-spacing:normal;
+	text-indent: 5px;
+}
+.sidenavdown{
+	width:13%;
+	background-color:aliceblue;
+	margin-right:auto;
+	position:fixed;
+	margin-left:1.8%;
+	margin-top:42%;
+	border:1px solid;
+	border-radius:20px;
+	padding-top: 10px;
+}
+.sidenav{
+	width:10%;
+	background-color:aliceblue;
+	margin-right:auto;
+	position:fixed;
+	margin-left:3.2%;
+	height:18%;
+	margin-top:1.5%;
+	border:1px solid;
+	border-radius:20px;
+}
+div.sidenav ul li{
+	margin-left: auto;
+	margin-right: auto;
+    width: 70%;
+	height:5%;
+	text-align: center;
+	font-size:0.8em;
+	padding-up:2px;
+	padding-bottom: 3px;
+	border:2px solid;
+	border-radius: 25px;
+	background:#CEE41D;
+}
+div.sidenav ul li:hover{
+	background:#11CE95;
+}
+div.sidenav ul{
+	list-style: none;
+	text-align: center;
+}
+.container .header{
+	font-family: comic sans ms;
+	text-align: center;
+	padding:20px;
+	font-size: 40px;
+}
+.container .passage{
+	font-family:american typewriter;
+	padding:15px;
+	text-align: center;
+	font-size:35px;
+}
+.container .passagewimg{
+	font-family:american typewriter;
+	padding:10px;
+	font-size:1.5em;
+}
+.container .passagewimg span img{
+	opacity: 0;
+}
+.container .passagewimg span:hover img{
+	opacity: 1;
+}
+.comment{
+	margin-left: auto;
+	margin-right: auto;
+	padding:5px 5px 5px 5px;
+	font:17px Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+	text-shadow:1px 1px 1px #FFF;
+	border:1px solid #E4E4E4;
+	background-color: #E9E611;
+	opacity: 0.95;
+}
+.submitcomment{
+	padding: 5px;
+	border-radius: 20px;
+	border:2px solid #FF7200;
+}
+@keyframes commentblock{
+	from{
+		font-size:0.0em;
+		height:0%;
+		width:30%;
+	}
+	to{
+		font-size:1.5em;
+		font-weight: bold;
+	}
+}
+.commentblock{
+	margin-left:auto;
+	height:8%;
+	margin-right:auto;
+	background-color:#FF7200;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+	padding:15px;
+	font-family:american typewriter;
+	font-size:1.5em;
+	font-weight: bold;
+	margin-bottom: 3%;
+	overflow-y:auto;
+	width:80%;
+}
+.information{
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#FF7200;
+	height:50%;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+	padding:30px;
+	font-family:american typewriter;
+	font-size:1.3em;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+.bloglistblock{
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#FF7200;
+	height:18%;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+	padding:15px;
+	font-family:american typewriter;
+	font-size:1.3em;
+	font-weight: bold;
+	margin-bottom: 3%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.bloglistsubblock{
+	margin-left:5%;
+	margin-right:5%;
+	border:1px cornflowerblue;
+	border-radius: 10px;
+	padding:5px;
+	padding-bottom: 8px;
+	padding-left:15px;
+	background-color: #024F17;
+	font-size:1.0em;
+}
+.bloglistsubblock:hover{
+	-moz-box-shadow: 0px 0px 5px 5px #FFFFFF;
+	box-shadow: 0px 0px 5px 5px #FFFFFF;
+}
+.blogblock{
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#FF7200;
+	height:40%;
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+	padding:15px;
+	font-family:american typewriter;
+	font-size:1.3em;
+	font-weight: bold;
+	margin-bottom: 3%;
+	word-wrap:break-word;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.likebutton{
+	margin-left: auto;
+	margin-right: auto;
+	width:7%;
+	text-align: center;
+	font-size:0.8em;
+	padding-up:2px;
+	padding-bottom: 3px;
+	border:2px solid;
+	border-radius: 25px;
+	background:#CEE41D;
+}
+.likebutton:hover{
+	background:#11CE95;
+}

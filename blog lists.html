@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="blog.css"/>
+<script src="JS/BlogLists.js"></script>
+<script src="JS/HomePage.js"></script>
+</head>
+<body class="body" id="start" onselectstart="return false">
+<!--navbar-->
+<nav>
+	<div class="dividelinelong"></div>
+	<ul>
+		<li class="mainlogo">KHA's Blog</li>
+		<li class="subs"><a href="homepage(blog).html">Home</a></li>
+		<li class="subs"><a href="blog lists.html">Blog Lists</a></li>
+		<li class="subs"><a onClick="writeAbout()">About</a></li>
+	</ul>
+</nav>
+<div style="text-align: ceneter;">
+<div class="sidenav">
+	<ul>
+		<br><br>
+		<a onClick="writeBlogList()"><li>返回目录</li></a>
+		<br>
+		<a href="#start"><li>返回顶部</li></a>
+	</ul>
+</div>
+</div>
+<!--maincontents-->
+<div class="container" id="main container" style="opacity: 0.7">
+	<br>
+	<div class="bloglistblock"><span style="font-size:2.0em;">School</span>
+	<br><br>
+	<a onClick="writeBlog(1)"><p class="bloglistsubblock">2017软件学院迎新晚会</p></a>
+	</div>
+	<div class="bloglistblock"><span style="font-size:2.0em;">Courses</span>
+	<br><br>
+	<a onClick="writeBlog(2)"><p class="bloglistsubblock">计算机科学概论</p></a>
+	</div>
+</div>
+</body>
+</html>

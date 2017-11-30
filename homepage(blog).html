@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="blog.css"/>
+<script src="JS/HomePage.js"></script>
+</head>
+<body class="body" id="start" onselectstart="return false" onLoad="checkCookie()">
+<!--navbar-->
+<nav>
+	<div class="dividelinelong"></div>
+	<ul>
+		<li class="mainlogo">KHA's Blog</li>
+		<li class="subs"><a onClick="homeReturn()">Home</a></li>
+		<li class="subs"><a href="blog lists.html">Blog Lists</a></li>
+		<li class="subs"><a onClick="writeAbout()">About</a></li>
+	</ul>
+</nav>
+<div style="text-align: center;">
+<div class="sidenav">
+	<ul>
+		<br>
+		<a onClick="information()"><li>网页说明</li></a><br>
+		<a onClick="homeReturnComment()"><li>留言区</li></a><br>
+		<a href="#start"><li>返回顶部</li></a>
+	</ul>
+</div>
+</div>
+<div style="text-align: center;">
+<div class="sidenavdown">
+	<p style="font-size:0.8em;">Username:<br><input type="text" style="width: 70%;" id="usernameinput"></p>
+	<p style="font-size: 0.8em;">Password:<br><input type="password" style="width:70%" id="passwordinput"></p>
+	<button class="submitcomment" style="margin-bottom: 5px;margin-top:5px;" onClick="login()">登录或注册</button>
+</div>
+</div>
+<!--maincontents-->
+<div class="container" id="main container" style="opacity: 0.7">
+	<div style="text-align: center">
+	<br>
+	<textarea rows="8" class="comment" id="comment" style="width: 85%;height: 20%;"></textarea><br>
+	<br>
+	<button onClick="addComment()" class="submitcomment">Leave comments</button>
+	<br>
+	</div>
+</div>
+</body>
+</html>
